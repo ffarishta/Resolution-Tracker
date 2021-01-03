@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scroll.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body onclick="printID(this.id)">
+    <div class="container" id="section1">
+        <div class="calender-container">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
+      
+          <div class="tcontainer">
+            <input id="inputField" type="text"><button id="addToDo">+</button>
+            <select name="Days" id="days">
+                <option value="1">Day</option>
+                <option value="7">Week</option>
+                <option value="30">Month</option>
+                <option value="90">3 Month</option>
+                <option value="182">6 Month</option>
+                <option value="274">9 Month</option>
+                <option value="365">12 Month</option>
+              </select>
+              
+            <div class="to-dos" id="toDoContainer"></div>
+            <button id="next">Next</button>
+            <button id="save">Save</button>
+            
+        </div>
+       
+        <script src="main.js"></script>
+        <a id= "scroll" href="#section2">View Progress Report</a> 
+    
+    </div>
+    
+    <div class="container" id="section2">
+      <a href="#section1" id="scroll2" class="scroll">Go back to Calender</a>
+      <div class="chartcontainer">
+      <canvas id="myChart2" width="500" height="400"></canvas>
+      </div>
+      
+     
+    </div>
+    
+</body>
+
+</html>
+
