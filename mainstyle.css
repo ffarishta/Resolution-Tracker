@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Cinzel","Roboto Slab","Montserrat", sans-serif;
+	background-color: #1b1813;
+  }
+
+#pics{
+	justify-content: center;
+	text-align: center;
+	
+}
+
+#qoute{
+	padding-top: 30px;
+	font-size: 25px;
+	justify-content: center;
+	text-align: center;
+	font-family: "Bungee Outline","Cinzel","Roboto Slab","Montserrat", sans-serif;
+	color: #ffffff;
+}
+  
+#Heading{
+	margin: 10px;
+	height: 90px;
+	border-radius: 5px;
+	top:0;
+	font-weight: bold;
+	font-size: 47px;
+	color: #ffffff;
+	text-align: Center;
+	padding-top: 0px;
+	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/*==============================================================================*/
+/* BUTTON*/
+
+.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: #bb4b1f; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+
+.button5:hover {
+	background-color: #555555;
+	color: white;
+  }
+
+
+
+
+
+
+
+
